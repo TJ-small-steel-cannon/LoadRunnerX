@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <link rel="icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> LoadRunnerX </title>
-    <script type="module" crossorigin src="/assets/index-29126af5.js"></script>
-    <link rel="stylesheet" href="/assets/index-a5ef547c.css">
-  </head>
-  <body>
-    <div id="app"></div>
     
-  </body>
+    <script src="/node_modules/nprogress/nprogress.js"></script>
+    <title> LoadRunnerX </title>
+  <script type="module" crossorigin src="/assets/index-4e40011e.js"></script>
+  <link rel="stylesheet" href="/assets/index-9e933293.css">
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+    NProgress.start()
+    // 给页面设置请求加载进度条效果
+    window.onload = function () {
+        NProgress.done()
+    }
+</script>
+</body>
 </html>
